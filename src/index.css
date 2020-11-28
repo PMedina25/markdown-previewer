@@ -1,0 +1,209 @@
+/* 
+====== 
+Variables 
+======
+*/
+:root {
+  --main-background-color: #87B5B5;
+  --editor-previewer-background-color: #C0D8D8;
+  --header-color: #4AA3A3;
+}
+
+/* 
+====== 
+Global Styles 
+======
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 80%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--main-background-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*
+======
+Global styles
+======
+*/
+main {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h5 {
+  margin: 0;
+}
+
+/* 
+====== 
+Headers
+======
+*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--header-color);
+  padding: 0.3rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.freecodecamp-icon {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+a {
+  color: black;
+}
+
+.expand-minimize-icon {
+  margin-left: auto;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.expand-minimize-icon:hover {
+  color: var(--editor-previewer-background-color)
+;}
+
+/* 
+====== 
+Editor
+======
+*/
+#editor-container {
+  width: 600px;
+  height: 16rem;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+#editor {
+  width: 100%;
+  height: 90%;
+  padding: 5px;
+  background: var(--editor-previewer-background-color);
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#editor-container.expand {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 
+====== 
+Previewer
+======
+*/
+#preview-container {
+  width: 900px;
+  height: 12rem;
+  max-width:100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#preview-container.expand {
+  width: 100vw;
+  height: 100vh;
+}
+
+#preview {
+  width: 100%;
+  height: 95%;
+  padding: 1rem;
+  background: var(--editor-previewer-background-color);
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
+  text-align: left;
+}
+
+
+#preview h1 {
+  border-bottom: 2px solid black;
+}
+
+#preview h2 {
+  border-bottom: 1px solid black;
+}
+
+#preview pre {
+  text-align: left;
+  background: white;
+  padding: 5px 0 5px 5px;
+}
+
+#preview p {
+  text-align: left;
+}
+
+#preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#preview table {
+  margin-bottom: 1rem;
+}
+
+#preview tr,
+#preview th,
+#preview td {
+  border-collapse: collapse;
+  border: 2px solid #224b4b;
+}
+
+#preview ul,
+#preview ol {
+  text-align: left;
+  padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
